@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>js开发简易计算器</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<table>
+			<tr>
+				<td colspan="5">
+					<input type="text" name="result" id="result" readonly="readonly">
+					<span>算式提示：<span id="tip"></span></span>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button" value="sin" onclick="funcalc('sin')" class="oper-btn"></td>
+				<td><input type="button" value="cos" onclick="funcalc('cos')" class="oper-btn"></td>
+				<td><input type="button" value="tan" onclick="funcalc('tan')" class="oper-btn"></td>
+				<td><input type="button" value="退格" onclick="getBack(this)" class="back-btn"></td>
+				<td><input type="button" value="清屏" onclick="getClear()" class="clear-btn"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="getNum(this)"></td>
+				<td><input type="button" value="8" onclick="getNum(this)"></td>
+				<td><input type="button" value="9" onclick="getNum(this)"></td>
+				<td><input type="button" value="1/x" onclick="funcalc('recip')" class="oper-btn"></td>
+				<td><input type="button" value="x^2" onclick="funcalc('sqrt')" class="oper-btn"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="4" onclick="getNum(this)"></td>
+				<td><input type="button" value="5" onclick="getNum(this)"></td>
+				<td><input type="button" value="6" onclick="getNum(this)"></td>
+				<td><input type="button" value="*" onclick="getOper(this)" class="oper-btn"></td>
+				<td><input type="button" value="/" onclick="getOper(this)" class="oper-btn"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="1" onclick="getNum(this)"></td>
+				<td><input type="button" value="2" onclick="getNum(this)"></td>
+				<td><input type="button" value="3" onclick="getNum(this)"></td>
+				<td><input type="button" value="+" onclick="getOper(this)" class="oper-btn"></td>
+				<td><input type="button" value="-" onclick="getOper(this)" class="oper-btn"></td>
+			</tr>
+			<tr>
+				<td><input type="button" value="0" onclick="getNum(this)"></td>
+				<td><input type="button" value="." onclick="getNum(this)"></td>
+				<td><input type="button" value="+/-" onclick="changeSign(this)"></td>
+				<td colspan="2"><input type="button" value="=" onclick="getResult()" style="width:100%;" class="oper-btn"></td>
+			</tr>
+			<tr>
+				<td colspan="5">
+					<span id="errorTip"></span>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>

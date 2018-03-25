@@ -1,0 +1,53 @@
+
+
+table{
+	margin: 0 auto;
+	margin-top: 60px;
+	border: 1px solid #C8C4C4;
+	border-collapse: collapse;
+	border-radius: 5px;
+	background: #F3F3F3;
+}
+table td{
+	padding: 10px;
+	border: 0;
+}
+table td input[type=text]{
+	width: 96%;
+	height: 40px;
+	font-size: 16px;
+	margin: 10px 5px;
+}
+table td input[type=button]{
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #BCBCBC;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px #ccc;
+    outline: 0;
+    cursor: pointer;
+}
+
+/*退格和清屏按钮*/
+table td input.back-btn,
+table td input.clear-btn{
+	background: #DE7D41;
+	border-color: #DE7D41;
+	color: #fff;
+}
+
+/*操作符按钮*/
+table td input.oper-btn{
+	background: #959393;
+	border-color: #959393;
+    color: #fff;
+}
+
+/*错误提示*/
+table #errorTip{
+	color: #E91E63;
+	font-size: 16px;
+}
